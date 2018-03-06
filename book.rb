@@ -1,3 +1,4 @@
+# Object for storing scraped book info
 class Book
   attr_accessor :raw_data
   def initialize(raw_data)

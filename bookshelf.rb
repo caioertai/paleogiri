@@ -1,3 +1,4 @@
+# Storage class
 class Bookshelf
   attr_reader :bookshelf
   def initialize(bookshelf = [])

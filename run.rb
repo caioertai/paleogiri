@@ -4,7 +4,7 @@ require_relative 'scribe'
 
 # DB = SQLite3::Database.new("db/books.db")
 
-scrapper = Scrapper.new("http://purl.pt/index/geral/purl/PT/1-49.html")
+scrapper = Scrapper.new('http://purl.pt/index/geral/purl/PT/1-49.html')
 raw_shelf = scrapper.run
 
 scribe = Scribe.new
