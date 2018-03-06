@@ -1,7 +1,6 @@
 require 'open-uri'
 require 'nokogiri'
 
-class Scrapper
   def initialize(url)
     @raw_shelf = []
     @url = url
@@ -23,7 +22,6 @@ class Scrapper
     new_max = position[2].to_i + 50
     new_position = "#{new_min}-#{new_max}"
     @url = @url.gsub(/\d*-\d*/, new_position)
-    p @url
   end
 
   def collect_data(url)
